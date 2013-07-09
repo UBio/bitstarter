@@ -2,9 +2,9 @@ var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
 
-app.get('/', function(request, response) {
-  response.send('Hello World 3!');
-});
+//app.get('/', function(request, response) {
+//  response.send('Hello World 3!');
+//});
 
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
